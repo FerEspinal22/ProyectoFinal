@@ -28,9 +28,9 @@ namespace ProyectoGrupo4.Modelos.DAO
                 valido = Convert.ToBoolean(comando.ExecuteScalar());
                 MiConexion.Close();
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                throw;
+
             }
             return valido;
         }

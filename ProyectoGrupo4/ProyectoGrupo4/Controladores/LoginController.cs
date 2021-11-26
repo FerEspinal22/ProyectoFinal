@@ -39,9 +39,9 @@ namespace ProyectoGrupo4.Controladores
 
             if (esValido)
             {
-                //MenuView menu = new MenuView();
+                MenuView menu = new MenuView();
                 vista.Hide();
-                //menu.Show();
+                menu.Show();
             }
             else
             {

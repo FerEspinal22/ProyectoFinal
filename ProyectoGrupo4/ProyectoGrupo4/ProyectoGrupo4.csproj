@@ -83,6 +83,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Vistas\LoginView.resx">
+      <DependentUpon>LoginView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Vistas\MenuView.resx">
       <DependentUpon>MenuView.cs</DependentUpon>
     </EmbeddedResource>
@@ -100,6 +103,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Cliente.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\commercial_plane.jpeg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
