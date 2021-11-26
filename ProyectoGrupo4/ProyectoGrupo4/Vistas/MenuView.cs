@@ -18,8 +18,10 @@ namespace ProyectoGrupo4.Vistas
         ClienteView vistaClientes;
         ClaseView vistaClase;
         DestinoView vistaDestino;
+        GenerarBoletoView vistaGenerarBoleto;
+        BoletoView vistaBoleto;
 
-       
+
         private void ClienteToolStripButton_Click(object sender, EventArgs e)
         {
             if (vistaClientes == null)
@@ -78,6 +80,46 @@ namespace ProyectoGrupo4.Vistas
         private void VistaDestino_FormClosed(object sender, FormClosedEventArgs e)
         {
             vistaDestino = null;
+        }
+
+        private void GenerarBoletoToolStripButton_Click(object sender, EventArgs e)
+        {
+            if (vistaGenerarBoleto == null)
+            {
+                vistaGenerarBoleto = new GenerarBoletoView();
+                vistaGenerarBoleto.MdiParent = this;
+                vistaGenerarBoleto.FormClosed += VistaGenerarBoleto_FormClosed;
+                vistaGenerarBoleto.Show();
+            }
+            else
+            {
+                vistaGenerarBoleto.Activate();
+            }
+        }
+
+        private void VistaGenerarBoleto_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            vistaGenerarBoleto = null;
+        }
+
+        private void BoletoToolStripButton_Click(object sender, EventArgs e)
+        {
+            if (vistaBoleto == null)
+            {
+                vistaBoleto = new BoletoView();
+                vistaBoleto.MdiParent = this;
+                vistaBoleto.FormClosed += VistaBoleto_FormClosed;
+                vistaBoleto.Show();
+            }
+            else
+            {
+                vistaBoleto.Activate();
+            }
+        }
+
+        private void VistaBoleto_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            vistaBoleto = null;
         }
     }
 }
