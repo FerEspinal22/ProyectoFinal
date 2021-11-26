@@ -119,5 +119,15 @@ namespace ProyectoGrupo4.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pngtree_blue_airplane_vector_clipart_png_image_961681 {
+            get {
+                object obj = ResourceManager.GetObject("pngtree-blue-airplane-vector-clipart-png-image_961681", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

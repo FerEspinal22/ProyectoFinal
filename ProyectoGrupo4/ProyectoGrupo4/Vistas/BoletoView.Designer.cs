@@ -39,29 +39,30 @@ namespace ProyectoGrupo4.Vistas
             this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 12);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 13);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(892, 464);
+            this.dataGridView1.Size = new System.Drawing.Size(732, 461);
             this.dataGridView1.TabIndex = 0;
             // 
             // SalirButton
             // 
-            this.SalirButton.Location = new System.Drawing.Point(394, 524);
+            this.SalirButton.Location = new System.Drawing.Point(315, 498);
             this.SalirButton.Name = "SalirButton";
-            this.SalirButton.Size = new System.Drawing.Size(122, 45);
+            this.SalirButton.Size = new System.Drawing.Size(123, 48);
             this.SalirButton.TabIndex = 2;
             this.SalirButton.Text = "Salir";
             this.SalirButton.UseVisualStyleBackColor = true;
             // 
             // BoletoView
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(916, 620);
+            this.ClientSize = new System.Drawing.Size(756, 566);
             this.Controls.Add(this.SalirButton);
             this.Controls.Add(this.dataGridView1);
+            this.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "BoletoView";
             this.Text = "BoletoView";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
