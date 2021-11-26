@@ -15,5 +15,69 @@ namespace ProyectoGrupo4.Vistas
         {
             InitializeComponent();
         }
+        ClienteView vistaClientes;
+        ClaseView vistaClase;
+        DestinoView vistaDestino;
+
+       
+        private void ClienteToolStripButton_Click(object sender, EventArgs e)
+        {
+            if (vistaClientes == null)
+            {
+                vistaClientes = new ClienteView();
+                vistaClientes.MdiParent = this;
+                vistaClientes.FormClosed += VistaClientes_FormClosed;
+                vistaClientes.Show();
+            }
+            else
+            {
+                vistaClientes.Activate();
+            }
+        }
+
+        private void VistaClientes_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            vistaClientes = null;
+        }
+
+        private void ClaseToolStripButton_Click(object sender, EventArgs e)
+        {
+            if (vistaClase == null)
+            {
+                vistaClase = new ClaseView();
+                vistaClase.MdiParent = this;
+                vistaClase.FormClosed += VistaClase_FormClosed;
+                vistaClase.Show();
+            }
+            else
+            {
+                vistaClase.Activate();
+            }
+        }
+
+        private void VistaClase_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            vistaClase = null;
+        }
+
+        private void DestinoToolStripButton_Click(object sender, EventArgs e)
+        {
+            if (vistaDestino == null)
+            {
+                vistaDestino = new DestinoView();
+                vistaDestino.MdiParent = this;
+                vistaDestino.FormClosed += VistaDestino_FormClosed;
+                vistaDestino.Show();
+            }
+            else
+            {
+                vistaDestino.Activate();
+            }
+        }
+
+        private void VistaDestino_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            vistaDestino = null;
+        }
     }
 }

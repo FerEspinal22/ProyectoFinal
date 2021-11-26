@@ -34,15 +34,15 @@ namespace ProyectoGrupo4.Vistas
             this.toolStripEx1 = new Syncfusion.Windows.Forms.Tools.ToolStripEx();
             this.ClienteToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.toolStripTabItem2 = new Syncfusion.Windows.Forms.Tools.ToolStripTabItem();
-            this.toolStripTabItem3 = new Syncfusion.Windows.Forms.Tools.ToolStripTabItem();
-            this.toolStripTabItem4 = new Syncfusion.Windows.Forms.Tools.ToolStripTabItem();
-            this.toolStripTabItem5 = new Syncfusion.Windows.Forms.Tools.ToolStripTabItem();
             this.toolStripEx2 = new Syncfusion.Windows.Forms.Tools.ToolStripEx();
             this.ClaseToolStripButton = new System.Windows.Forms.ToolStripButton();
+            this.toolStripTabItem3 = new Syncfusion.Windows.Forms.Tools.ToolStripTabItem();
             this.toolStripEx3 = new Syncfusion.Windows.Forms.Tools.ToolStripEx();
             this.DestinoToolStripButton = new System.Windows.Forms.ToolStripButton();
+            this.toolStripTabItem4 = new Syncfusion.Windows.Forms.Tools.ToolStripTabItem();
             this.toolStripEx4 = new Syncfusion.Windows.Forms.Tools.ToolStripEx();
             this.GenerarBoletoToolStripButton = new System.Windows.Forms.ToolStripButton();
+            this.toolStripTabItem5 = new Syncfusion.Windows.Forms.Tools.ToolStripTabItem();
             this.toolStripEx5 = new Syncfusion.Windows.Forms.Tools.ToolStripEx();
             this.BoletoToolStripButton = new System.Windows.Forms.ToolStripButton();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControlAdv1)).BeginInit();
@@ -50,12 +50,12 @@ namespace ProyectoGrupo4.Vistas
             this.toolStripTabItem1.Panel.SuspendLayout();
             this.toolStripEx1.SuspendLayout();
             this.toolStripTabItem2.Panel.SuspendLayout();
-            this.toolStripTabItem3.Panel.SuspendLayout();
-            this.toolStripTabItem4.Panel.SuspendLayout();
-            this.toolStripTabItem5.Panel.SuspendLayout();
             this.toolStripEx2.SuspendLayout();
+            this.toolStripTabItem3.Panel.SuspendLayout();
             this.toolStripEx3.SuspendLayout();
+            this.toolStripTabItem4.Panel.SuspendLayout();
             this.toolStripEx4.SuspendLayout();
+            this.toolStripTabItem5.Panel.SuspendLayout();
             this.toolStripEx5.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -69,16 +69,18 @@ namespace ProyectoGrupo4.Vistas
             this.ribbonControlAdv1.Header.AddMainItem(toolStripTabItem4);
             this.ribbonControlAdv1.Header.AddMainItem(toolStripTabItem5);
             this.ribbonControlAdv1.Location = new System.Drawing.Point(0, 0);
+            this.ribbonControlAdv1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.ribbonControlAdv1.MenuButtonFont = new System.Drawing.Font("Segoe UI", 8.25F);
             this.ribbonControlAdv1.MenuButtonText = "";
             this.ribbonControlAdv1.MenuButtonWidth = 56;
             this.ribbonControlAdv1.MenuColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(114)))), ((int)(((byte)(198)))));
+            this.ribbonControlAdv1.MinimumSize = new System.Drawing.Size(0, 102);
             this.ribbonControlAdv1.Name = "ribbonControlAdv1";
             this.ribbonControlAdv1.OfficeColorScheme = Syncfusion.Windows.Forms.Tools.ToolStripEx.ColorScheme.Managed;
             // 
             // ribbonControlAdv1.OfficeMenu
             // 
-            this.ribbonControlAdv1.OfficeMenu.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.ribbonControlAdv1.OfficeMenu.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.ribbonControlAdv1.OfficeMenu.Name = "OfficeMenu";
             this.ribbonControlAdv1.OfficeMenu.ShowItemToolTips = true;
             this.ribbonControlAdv1.OfficeMenu.Size = new System.Drawing.Size(12, 65);
@@ -86,9 +88,9 @@ namespace ProyectoGrupo4.Vistas
             this.ribbonControlAdv1.QuickPanelVisible = false;
             this.ribbonControlAdv1.RibbonHeaderImage = Syncfusion.Windows.Forms.Tools.RibbonHeaderImage.None;
             this.ribbonControlAdv1.RibbonStyle = Syncfusion.Windows.Forms.Tools.RibbonStyle.Office2016;
-            this.ribbonControlAdv1.SelectedTab = this.toolStripTabItem1;
+            this.ribbonControlAdv1.SelectedTab = this.toolStripTabItem3;
             this.ribbonControlAdv1.ShowRibbonDisplayOptionButton = true;
-            this.ribbonControlAdv1.Size = new System.Drawing.Size(905, 179);
+            this.ribbonControlAdv1.Size = new System.Drawing.Size(1017, 224);
             this.ribbonControlAdv1.SystemText.QuickAccessDialogDropDownName = "Start menu";
             this.ribbonControlAdv1.SystemText.RenameDisplayLabelText = "&Display Name:";
             this.ribbonControlAdv1.TabIndex = 1;
@@ -104,16 +106,18 @@ namespace ProyectoGrupo4.Vistas
             // 
             this.toolStripTabItem1.Panel.Controls.Add(this.toolStripEx1);
             this.toolStripTabItem1.Panel.Name = "ribbonPanel1";
+            this.toolStripTabItem1.Panel.Padding = new System.Windows.Forms.Padding(0, 1, 39, 0);
             this.toolStripTabItem1.Panel.ScrollPosition = 0;
             this.toolStripTabItem1.Panel.TabIndex = 2;
             this.toolStripTabItem1.Panel.Text = "Cliente";
             this.toolStripTabItem1.Position = 0;
-            this.toolStripTabItem1.Size = new System.Drawing.Size(77, 41);
+            this.toolStripTabItem1.Size = new System.Drawing.Size(95, 52);
             this.toolStripTabItem1.Tag = "1";
             this.toolStripTabItem1.Text = "Cliente";
             // 
             // toolStripEx1
             // 
+            this.toolStripEx1.AutoSize = false;
             this.toolStripEx1.Dock = System.Windows.Forms.DockStyle.None;
             this.toolStripEx1.Font = new System.Drawing.Font("Segoe UI", 8.25F);
             this.toolStripEx1.ForeColor = System.Drawing.Color.MidnightBlue;
@@ -127,7 +131,7 @@ namespace ProyectoGrupo4.Vistas
             this.toolStripEx1.Office12Mode = false;
             this.toolStripEx1.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
             this.toolStripEx1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.toolStripEx1.Size = new System.Drawing.Size(77, 94);
+            this.toolStripEx1.Size = new System.Drawing.Size(293, 119);
             this.toolStripEx1.TabIndex = 0;
             // 
             // ClienteToolStripButton
@@ -137,9 +141,10 @@ namespace ProyectoGrupo4.Vistas
             this.ClienteToolStripButton.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.ClienteToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.ClienteToolStripButton.Name = "ClienteToolStripButton";
-            this.ClienteToolStripButton.Size = new System.Drawing.Size(68, 74);
+            this.ClienteToolStripButton.Size = new System.Drawing.Size(83, 94);
             this.ClienteToolStripButton.Text = "Clientes";
             this.ClienteToolStripButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.ClienteToolStripButton.Click += new System.EventHandler(this.ClienteToolStripButton_Click);
             // 
             // toolStripTabItem2
             // 
@@ -150,64 +155,14 @@ namespace ProyectoGrupo4.Vistas
             // 
             this.toolStripTabItem2.Panel.Controls.Add(this.toolStripEx2);
             this.toolStripTabItem2.Panel.Name = "ribbonPanel2";
+            this.toolStripTabItem2.Panel.Padding = new System.Windows.Forms.Padding(0, 1, 39, 0);
             this.toolStripTabItem2.Panel.ScrollPosition = 0;
             this.toolStripTabItem2.Panel.TabIndex = 3;
             this.toolStripTabItem2.Panel.Text = "Clase";
             this.toolStripTabItem2.Position = 1;
-            this.toolStripTabItem2.Size = new System.Drawing.Size(65, 41);
+            this.toolStripTabItem2.Size = new System.Drawing.Size(80, 52);
             this.toolStripTabItem2.Tag = "2";
             this.toolStripTabItem2.Text = "Clase";
-            // 
-            // toolStripTabItem3
-            // 
-            this.toolStripTabItem3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.toolStripTabItem3.Name = "toolStripTabItem3";
-            // 
-            // ribbonControlAdv1.ribbonPanel3
-            // 
-            this.toolStripTabItem3.Panel.Controls.Add(this.toolStripEx3);
-            this.toolStripTabItem3.Panel.Name = "ribbonPanel3";
-            this.toolStripTabItem3.Panel.ScrollPosition = 0;
-            this.toolStripTabItem3.Panel.TabIndex = 4;
-            this.toolStripTabItem3.Panel.Text = "Destino";
-            this.toolStripTabItem3.Position = 2;
-            this.toolStripTabItem3.Size = new System.Drawing.Size(83, 41);
-            this.toolStripTabItem3.Tag = "3";
-            this.toolStripTabItem3.Text = "Destino";
-            // 
-            // toolStripTabItem4
-            // 
-            this.toolStripTabItem4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.toolStripTabItem4.Name = "toolStripTabItem4";
-            // 
-            // ribbonControlAdv1.ribbonPanel4
-            // 
-            this.toolStripTabItem4.Panel.Controls.Add(this.toolStripEx4);
-            this.toolStripTabItem4.Panel.Name = "ribbonPanel4";
-            this.toolStripTabItem4.Panel.ScrollPosition = 0;
-            this.toolStripTabItem4.Panel.TabIndex = 5;
-            this.toolStripTabItem4.Panel.Text = "Generar boleto";
-            this.toolStripTabItem4.Position = 3;
-            this.toolStripTabItem4.Size = new System.Drawing.Size(134, 41);
-            this.toolStripTabItem4.Tag = "4";
-            this.toolStripTabItem4.Text = "Generar boleto";
-            // 
-            // toolStripTabItem5
-            // 
-            this.toolStripTabItem5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.toolStripTabItem5.Name = "toolStripTabItem5";
-            // 
-            // ribbonControlAdv1.ribbonPanel5
-            // 
-            this.toolStripTabItem5.Panel.Controls.Add(this.toolStripEx5);
-            this.toolStripTabItem5.Panel.Name = "ribbonPanel5";
-            this.toolStripTabItem5.Panel.ScrollPosition = 0;
-            this.toolStripTabItem5.Panel.TabIndex = 6;
-            this.toolStripTabItem5.Panel.Text = "Boleto";
-            this.toolStripTabItem5.Position = 4;
-            this.toolStripTabItem5.Size = new System.Drawing.Size(75, 41);
-            this.toolStripTabItem5.Tag = "5";
-            this.toolStripTabItem5.Text = "Boleto";
             // 
             // toolStripEx2
             // 
@@ -224,7 +179,8 @@ namespace ProyectoGrupo4.Vistas
             this.toolStripEx2.Name = "toolStripEx2";
             this.toolStripEx2.Office12Mode = false;
             this.toolStripEx2.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
-            this.toolStripEx2.Size = new System.Drawing.Size(116, 94);
+            this.toolStripEx2.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.toolStripEx2.Size = new System.Drawing.Size(284, 119);
             this.toolStripEx2.TabIndex = 0;
             // 
             // ClaseToolStripButton
@@ -234,9 +190,28 @@ namespace ProyectoGrupo4.Vistas
             this.ClaseToolStripButton.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.ClaseToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.ClaseToolStripButton.Name = "ClaseToolStripButton";
-            this.ClaseToolStripButton.Size = new System.Drawing.Size(49, 74);
+            this.ClaseToolStripButton.Size = new System.Drawing.Size(60, 94);
             this.ClaseToolStripButton.Text = "Clase";
             this.ClaseToolStripButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.ClaseToolStripButton.Click += new System.EventHandler(this.ClaseToolStripButton_Click);
+            // 
+            // toolStripTabItem3
+            // 
+            this.toolStripTabItem3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toolStripTabItem3.Name = "toolStripTabItem3";
+            // 
+            // ribbonControlAdv1.ribbonPanel3
+            // 
+            this.toolStripTabItem3.Panel.Controls.Add(this.toolStripEx3);
+            this.toolStripTabItem3.Panel.Name = "ribbonPanel3";
+            this.toolStripTabItem3.Panel.Padding = new System.Windows.Forms.Padding(0, 1, 39, 0);
+            this.toolStripTabItem3.Panel.ScrollPosition = 0;
+            this.toolStripTabItem3.Panel.TabIndex = 4;
+            this.toolStripTabItem3.Panel.Text = "Destino";
+            this.toolStripTabItem3.Position = 2;
+            this.toolStripTabItem3.Size = new System.Drawing.Size(101, 52);
+            this.toolStripTabItem3.Tag = "3";
+            this.toolStripTabItem3.Text = "Destino";
             // 
             // toolStripEx3
             // 
@@ -253,19 +228,40 @@ namespace ProyectoGrupo4.Vistas
             this.toolStripEx3.Name = "toolStripEx3";
             this.toolStripEx3.Office12Mode = false;
             this.toolStripEx3.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
-            this.toolStripEx3.Size = new System.Drawing.Size(132, 94);
+            this.toolStripEx3.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.toolStripEx3.Size = new System.Drawing.Size(280, 119);
             this.toolStripEx3.TabIndex = 0;
             // 
             // DestinoToolStripButton
             // 
             this.DestinoToolStripButton.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DestinoToolStripButton.Image = global::ProyectoGrupo4.Properties.Resources.Destino;
+            this.DestinoToolStripButton.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.DestinoToolStripButton.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.DestinoToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.DestinoToolStripButton.Name = "DestinoToolStripButton";
-            this.DestinoToolStripButton.Size = new System.Drawing.Size(67, 74);
+            this.DestinoToolStripButton.Size = new System.Drawing.Size(81, 94);
             this.DestinoToolStripButton.Text = "Destino";
             this.DestinoToolStripButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.DestinoToolStripButton.Click += new System.EventHandler(this.DestinoToolStripButton_Click);
+            // 
+            // toolStripTabItem4
+            // 
+            this.toolStripTabItem4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toolStripTabItem4.Name = "toolStripTabItem4";
+            // 
+            // ribbonControlAdv1.ribbonPanel4
+            // 
+            this.toolStripTabItem4.Panel.Controls.Add(this.toolStripEx4);
+            this.toolStripTabItem4.Panel.Name = "ribbonPanel4";
+            this.toolStripTabItem4.Panel.Padding = new System.Windows.Forms.Padding(0, 1, 39, 0);
+            this.toolStripTabItem4.Panel.ScrollPosition = 0;
+            this.toolStripTabItem4.Panel.TabIndex = 5;
+            this.toolStripTabItem4.Panel.Text = "Generar boleto";
+            this.toolStripTabItem4.Position = 3;
+            this.toolStripTabItem4.Size = new System.Drawing.Size(164, 52);
+            this.toolStripTabItem4.Tag = "4";
+            this.toolStripTabItem4.Text = "Generar boleto";
             // 
             // toolStripEx4
             // 
@@ -282,7 +278,8 @@ namespace ProyectoGrupo4.Vistas
             this.toolStripEx4.Name = "toolStripEx4";
             this.toolStripEx4.Office12Mode = false;
             this.toolStripEx4.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
-            this.toolStripEx4.Size = new System.Drawing.Size(134, 94);
+            this.toolStripEx4.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.toolStripEx4.Size = new System.Drawing.Size(286, 119);
             this.toolStripEx4.TabIndex = 0;
             // 
             // GenerarBoletoToolStripButton
@@ -292,9 +289,27 @@ namespace ProyectoGrupo4.Vistas
             this.GenerarBoletoToolStripButton.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.GenerarBoletoToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.GenerarBoletoToolStripButton.Name = "GenerarBoletoToolStripButton";
-            this.GenerarBoletoToolStripButton.Size = new System.Drawing.Size(118, 74);
+            this.GenerarBoletoToolStripButton.Size = new System.Drawing.Size(144, 61);
             this.GenerarBoletoToolStripButton.Text = "Generar boleto";
             this.GenerarBoletoToolStripButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            // 
+            // toolStripTabItem5
+            // 
+            this.toolStripTabItem5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toolStripTabItem5.Name = "toolStripTabItem5";
+            // 
+            // ribbonControlAdv1.ribbonPanel5
+            // 
+            this.toolStripTabItem5.Panel.Controls.Add(this.toolStripEx5);
+            this.toolStripTabItem5.Panel.Name = "ribbonPanel5";
+            this.toolStripTabItem5.Panel.Padding = new System.Windows.Forms.Padding(0, 1, 39, 0);
+            this.toolStripTabItem5.Panel.ScrollPosition = 0;
+            this.toolStripTabItem5.Panel.TabIndex = 6;
+            this.toolStripTabItem5.Panel.Text = "Boleto";
+            this.toolStripTabItem5.Position = 4;
+            this.toolStripTabItem5.Size = new System.Drawing.Size(92, 52);
+            this.toolStripTabItem5.Tag = "5";
+            this.toolStripTabItem5.Text = "Boleto";
             // 
             // toolStripEx5
             // 
@@ -311,7 +326,8 @@ namespace ProyectoGrupo4.Vistas
             this.toolStripEx5.Name = "toolStripEx5";
             this.toolStripEx5.Office12Mode = false;
             this.toolStripEx5.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
-            this.toolStripEx5.Size = new System.Drawing.Size(112, 94);
+            this.toolStripEx5.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.toolStripEx5.Size = new System.Drawing.Size(280, 119);
             this.toolStripEx5.TabIndex = 0;
             // 
             // BoletoToolStripButton
@@ -321,17 +337,18 @@ namespace ProyectoGrupo4.Vistas
             this.BoletoToolStripButton.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.BoletoToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.BoletoToolStripButton.Name = "BoletoToolStripButton";
-            this.BoletoToolStripButton.Size = new System.Drawing.Size(66, 74);
+            this.BoletoToolStripButton.Size = new System.Drawing.Size(80, 89);
             this.BoletoToolStripButton.Text = "Boletos";
             this.BoletoToolStripButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
             // MenuView
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(905, 568);
+            this.ClientSize = new System.Drawing.Size(1017, 708);
             this.Controls.Add(this.ribbonControlAdv1);
             this.IsMdiContainer = true;
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "MenuView";
             this.Text = "MenuView";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
@@ -339,19 +356,18 @@ namespace ProyectoGrupo4.Vistas
             this.ribbonControlAdv1.ResumeLayout(false);
             this.ribbonControlAdv1.PerformLayout();
             this.toolStripTabItem1.Panel.ResumeLayout(false);
-            this.toolStripTabItem1.Panel.PerformLayout();
             this.toolStripEx1.ResumeLayout(false);
             this.toolStripEx1.PerformLayout();
             this.toolStripTabItem2.Panel.ResumeLayout(false);
-            this.toolStripTabItem3.Panel.ResumeLayout(false);
-            this.toolStripTabItem4.Panel.ResumeLayout(false);
-            this.toolStripTabItem5.Panel.ResumeLayout(false);
             this.toolStripEx2.ResumeLayout(false);
             this.toolStripEx2.PerformLayout();
+            this.toolStripTabItem3.Panel.ResumeLayout(false);
             this.toolStripEx3.ResumeLayout(false);
             this.toolStripEx3.PerformLayout();
+            this.toolStripTabItem4.Panel.ResumeLayout(false);
             this.toolStripEx4.ResumeLayout(false);
             this.toolStripEx4.PerformLayout();
+            this.toolStripTabItem5.Panel.ResumeLayout(false);
             this.toolStripEx5.ResumeLayout(false);
             this.toolStripEx5.PerformLayout();
             this.ResumeLayout(false);
