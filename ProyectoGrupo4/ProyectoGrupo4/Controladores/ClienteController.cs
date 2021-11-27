@@ -73,6 +73,7 @@ namespace ProyectoGrupo4.Controladores
                 cliente.Correo = vista.CorreoTextBox.Text;
                 cliente.NumeroTelefonico = vista.NumeroTextBox.Text;
                 cliente.Edad = Convert.ToInt32(vista.EdadTextBox.Text);
+                cliente.Genero = vista.GeneroTextBox.Text;
 
 
                 if (operacion == "Nuevo")

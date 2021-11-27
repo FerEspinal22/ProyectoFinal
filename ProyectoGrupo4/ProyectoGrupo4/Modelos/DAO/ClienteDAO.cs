@@ -37,7 +37,7 @@ namespace ProyectoGrupo4.Modelos.DAO
                 MiConexion.Close();
                 inserto = true;
             }
-            catch (Exception)
+            catch (Exception ex)
             {
                 inserto = false;
             }
@@ -60,7 +60,7 @@ namespace ProyectoGrupo4.Modelos.DAO
                 dt.Load(dr);
                 MiConexion.Close();
             }
-            catch (Exception ex)
+            catch (Exception )
             {
 
                 throw;
