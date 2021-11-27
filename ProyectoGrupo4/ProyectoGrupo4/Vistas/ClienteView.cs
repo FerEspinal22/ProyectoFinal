@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProyectoGrupo4.Controladores;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,7 @@ namespace ProyectoGrupo4.Vistas
         public ClienteView()
         {
             InitializeComponent();
+            ClienteController controlador = new ClienteController(this);
         }
     }
 }
