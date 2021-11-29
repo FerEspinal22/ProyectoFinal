@@ -33,8 +33,6 @@ namespace ProyectoGrupo4.Vistas
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.FechaLlegadaDateTimePicker = new System.Windows.Forms.DateTimePicker();
-            this.FechaSalidaDateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.PrecioTextBox = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -47,6 +45,8 @@ namespace ProyectoGrupo4.Vistas
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.NombreTextBox = new System.Windows.Forms.TextBox();
+            this.FechaRegresoTextBox = new System.Windows.Forms.TextBox();
+            this.FechaSalidaTextBox = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -72,8 +72,8 @@ namespace ProyectoGrupo4.Vistas
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.FechaLlegadaDateTimePicker);
-            this.groupBox1.Controls.Add(this.FechaSalidaDateTimePicker);
+            this.groupBox1.Controls.Add(this.FechaRegresoTextBox);
+            this.groupBox1.Controls.Add(this.FechaSalidaTextBox);
             this.groupBox1.Controls.Add(this.PrecioTextBox);
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.label6);
@@ -97,22 +97,6 @@ namespace ProyectoGrupo4.Vistas
             this.groupBox1.TabIndex = 56;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "BOLETO";
-            // 
-            // FechaLlegadaDateTimePicker
-            // 
-            this.FechaLlegadaDateTimePicker.Location = new System.Drawing.Point(181, 375);
-            this.FechaLlegadaDateTimePicker.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.FechaLlegadaDateTimePicker.Name = "FechaLlegadaDateTimePicker";
-            this.FechaLlegadaDateTimePicker.Size = new System.Drawing.Size(200, 23);
-            this.FechaLlegadaDateTimePicker.TabIndex = 67;
-            // 
-            // FechaSalidaDateTimePicker
-            // 
-            this.FechaSalidaDateTimePicker.Location = new System.Drawing.Point(181, 328);
-            this.FechaSalidaDateTimePicker.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.FechaSalidaDateTimePicker.Name = "FechaSalidaDateTimePicker";
-            this.FechaSalidaDateTimePicker.Size = new System.Drawing.Size(200, 23);
-            this.FechaSalidaDateTimePicker.TabIndex = 66;
             // 
             // PrecioTextBox
             // 
@@ -221,6 +205,20 @@ namespace ProyectoGrupo4.Vistas
             this.NombreTextBox.Size = new System.Drawing.Size(255, 23);
             this.NombreTextBox.TabIndex = 58;
             // 
+            // FechaRegresoTextBox
+            // 
+            this.FechaRegresoTextBox.Location = new System.Drawing.Point(182, 375);
+            this.FechaRegresoTextBox.Name = "FechaRegresoTextBox";
+            this.FechaRegresoTextBox.Size = new System.Drawing.Size(229, 23);
+            this.FechaRegresoTextBox.TabIndex = 69;
+            // 
+            // FechaSalidaTextBox
+            // 
+            this.FechaSalidaTextBox.Location = new System.Drawing.Point(181, 328);
+            this.FechaSalidaTextBox.Name = "FechaSalidaTextBox";
+            this.FechaSalidaTextBox.Size = new System.Drawing.Size(229, 23);
+            this.FechaSalidaTextBox.TabIndex = 68;
+            // 
             // GenerarBoletoView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
@@ -252,11 +250,11 @@ namespace ProyectoGrupo4.Vistas
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         public System.Windows.Forms.TextBox NombreTextBox;
-        public System.Windows.Forms.DateTimePicker FechaLlegadaDateTimePicker;
-        public System.Windows.Forms.DateTimePicker FechaSalidaDateTimePicker;
         public System.Windows.Forms.TextBox PrecioTextBox;
         public System.Windows.Forms.ComboBox DestinoComboBox;
         public System.Windows.Forms.ComboBox ClaseComboBox;
         public System.Windows.Forms.DateTimePicker FechaDateTimePicker;
+        private System.Windows.Forms.TextBox FechaRegresoTextBox;
+        private System.Windows.Forms.TextBox FechaSalidaTextBox;
     }
 }
