@@ -29,127 +29,141 @@ namespace ProyectoGrupo4.Vistas
         /// </summary>
         private void InitializeComponent()
         {
-            this.CancelarButton = new System.Windows.Forms.Button();
-            this.GuardarButton = new System.Windows.Forms.Button();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.btn_Cancelar = new System.Windows.Forms.Button();
+            this.btn_Guardar = new System.Windows.Forms.Button();
+            this.txt_ClaseEconomica = new System.Windows.Forms.TextBox();
+            this.rdb_claseEconomica = new System.Windows.Forms.RadioButton();
+            this.txt_ClasePremiumEconomica = new System.Windows.Forms.TextBox();
+            this.rdb_ClasePremiumEconomic = new System.Windows.Forms.RadioButton();
+            this.txt_ClaseEmpresarial = new System.Windows.Forms.TextBox();
+            this.rdb_ClaseEmpresarial = new System.Windows.Forms.RadioButton();
+            this.txt_PrimeraClase = new System.Windows.Forms.TextBox();
+            this.rdb_PrimeraClase = new System.Windows.Forms.RadioButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.gradientPanel1 = new Syncfusion.Windows.Forms.Tools.GradientPanel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gradientPanel1)).BeginInit();
+            this.gradientPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // CancelarButton
+            // btn_Cancelar
             // 
-            this.CancelarButton.Location = new System.Drawing.Point(252, 312);
-            this.CancelarButton.Name = "CancelarButton";
-            this.CancelarButton.Size = new System.Drawing.Size(135, 58);
-            this.CancelarButton.TabIndex = 42;
-            this.CancelarButton.Text = "Cancelar";
-            this.CancelarButton.UseVisualStyleBackColor = true;
+            this.btn_Cancelar.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.btn_Cancelar.FlatAppearance.BorderSize = 0;
+            this.btn_Cancelar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_Cancelar.ForeColor = System.Drawing.Color.Maroon;
+            this.btn_Cancelar.Location = new System.Drawing.Point(114, 317);
+            this.btn_Cancelar.Name = "btn_Cancelar";
+            this.btn_Cancelar.Size = new System.Drawing.Size(80, 29);
+            this.btn_Cancelar.TabIndex = 42;
+            this.btn_Cancelar.Text = "Cancelar";
+            this.btn_Cancelar.UseVisualStyleBackColor = false;
             // 
-            // GuardarButton
+            // btn_Guardar
             // 
-            this.GuardarButton.Location = new System.Drawing.Point(111, 312);
-            this.GuardarButton.Name = "GuardarButton";
-            this.GuardarButton.Size = new System.Drawing.Size(135, 58);
-            this.GuardarButton.TabIndex = 41;
-            this.GuardarButton.Text = "Guardar";
-            this.GuardarButton.UseVisualStyleBackColor = true;
+            this.btn_Guardar.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.btn_Guardar.FlatAppearance.BorderSize = 0;
+            this.btn_Guardar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_Guardar.ForeColor = System.Drawing.Color.Maroon;
+            this.btn_Guardar.Location = new System.Drawing.Point(24, 317);
+            this.btn_Guardar.Name = "btn_Guardar";
+            this.btn_Guardar.Size = new System.Drawing.Size(73, 29);
+            this.btn_Guardar.TabIndex = 41;
+            this.btn_Guardar.Text = "Guardar";
+            this.btn_Guardar.UseVisualStyleBackColor = false;
             // 
-            // textBox4
+            // txt_ClaseEconomica
             // 
-            this.textBox4.Location = new System.Drawing.Point(38, 186);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.ReadOnly = true;
-            this.textBox4.Size = new System.Drawing.Size(108, 23);
-            this.textBox4.TabIndex = 40;
-            this.textBox4.Text = "50$";
+            this.txt_ClaseEconomica.Location = new System.Drawing.Point(38, 186);
+            this.txt_ClaseEconomica.Name = "txt_ClaseEconomica";
+            this.txt_ClaseEconomica.ReadOnly = true;
+            this.txt_ClaseEconomica.Size = new System.Drawing.Size(108, 23);
+            this.txt_ClaseEconomica.TabIndex = 40;
             // 
-            // radioButton4
+            // rdb_claseEconomica
             // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.Location = new System.Drawing.Point(24, 186);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(140, 21);
-            this.radioButton4.TabIndex = 39;
-            this.radioButton4.TabStop = true;
-            this.radioButton4.Text = "Clase Economica";
-            this.radioButton4.UseVisualStyleBackColor = true;
+            this.rdb_claseEconomica.AutoSize = true;
+            this.rdb_claseEconomica.Location = new System.Drawing.Point(24, 186);
+            this.rdb_claseEconomica.Name = "rdb_claseEconomica";
+            this.rdb_claseEconomica.Size = new System.Drawing.Size(140, 21);
+            this.rdb_claseEconomica.TabIndex = 39;
+            this.rdb_claseEconomica.TabStop = true;
+            this.rdb_claseEconomica.Text = "Clase Economica";
+            this.rdb_claseEconomica.UseVisualStyleBackColor = true;
             // 
-            // textBox3
+            // txt_ClasePremiumEconomica
             // 
-            this.textBox3.Location = new System.Drawing.Point(38, 136);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.ReadOnly = true;
-            this.textBox3.Size = new System.Drawing.Size(108, 23);
-            this.textBox3.TabIndex = 38;
-            this.textBox3.Text = "100$";
+            this.txt_ClasePremiumEconomica.Location = new System.Drawing.Point(38, 136);
+            this.txt_ClasePremiumEconomica.Name = "txt_ClasePremiumEconomica";
+            this.txt_ClasePremiumEconomica.ReadOnly = true;
+            this.txt_ClasePremiumEconomica.Size = new System.Drawing.Size(108, 23);
+            this.txt_ClasePremiumEconomica.TabIndex = 38;
             // 
-            // radioButton3
+            // rdb_ClasePremiumEconomic
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(23, 136);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(201, 21);
-            this.radioButton3.TabIndex = 37;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "Clase Premium Economica";
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.rdb_ClasePremiumEconomic.AutoSize = true;
+            this.rdb_ClasePremiumEconomic.Location = new System.Drawing.Point(23, 136);
+            this.rdb_ClasePremiumEconomic.Name = "rdb_ClasePremiumEconomic";
+            this.rdb_ClasePremiumEconomic.Size = new System.Drawing.Size(201, 21);
+            this.rdb_ClasePremiumEconomic.TabIndex = 37;
+            this.rdb_ClasePremiumEconomic.TabStop = true;
+            this.rdb_ClasePremiumEconomic.Text = "Clase Premium Economica";
+            this.rdb_ClasePremiumEconomic.UseVisualStyleBackColor = true;
             // 
-            // textBox2
+            // txt_ClaseEmpresarial
             // 
-            this.textBox2.Location = new System.Drawing.Point(38, 86);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(108, 23);
-            this.textBox2.TabIndex = 36;
-            this.textBox2.Text = "150$";
+            this.txt_ClaseEmpresarial.Location = new System.Drawing.Point(38, 86);
+            this.txt_ClaseEmpresarial.Name = "txt_ClaseEmpresarial";
+            this.txt_ClaseEmpresarial.ReadOnly = true;
+            this.txt_ClaseEmpresarial.Size = new System.Drawing.Size(108, 23);
+            this.txt_ClaseEmpresarial.TabIndex = 36;
             // 
-            // radioButton2
+            // rdb_ClaseEmpresarial
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(24, 86);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(140, 21);
-            this.radioButton2.TabIndex = 35;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Clase Empresarial";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.rdb_ClaseEmpresarial.AutoSize = true;
+            this.rdb_ClaseEmpresarial.Location = new System.Drawing.Point(24, 86);
+            this.rdb_ClaseEmpresarial.Name = "rdb_ClaseEmpresarial";
+            this.rdb_ClaseEmpresarial.Size = new System.Drawing.Size(140, 21);
+            this.rdb_ClaseEmpresarial.TabIndex = 35;
+            this.rdb_ClaseEmpresarial.TabStop = true;
+            this.rdb_ClaseEmpresarial.Text = "Clase Empresarial";
+            this.rdb_ClaseEmpresarial.UseVisualStyleBackColor = true;
             // 
-            // textBox1
+            // txt_PrimeraClase
             // 
-            this.textBox1.Location = new System.Drawing.Point(38, 35);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(108, 23);
-            this.textBox1.TabIndex = 34;
-            this.textBox1.Text = "200$";
+            this.txt_PrimeraClase.Location = new System.Drawing.Point(38, 35);
+            this.txt_PrimeraClase.Name = "txt_PrimeraClase";
+            this.txt_PrimeraClase.ReadOnly = true;
+            this.txt_PrimeraClase.Size = new System.Drawing.Size(108, 23);
+            this.txt_PrimeraClase.TabIndex = 34;
             // 
-            // radioButton1
+            // rdb_PrimeraClase
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(24, 37);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(119, 21);
-            this.radioButton1.TabIndex = 31;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Primera Clase ";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.rdb_PrimeraClase.AutoSize = true;
+            this.rdb_PrimeraClase.FlatAppearance.BorderSize = 0;
+            this.rdb_PrimeraClase.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.rdb_PrimeraClase.Location = new System.Drawing.Point(24, 37);
+            this.rdb_PrimeraClase.Name = "rdb_PrimeraClase";
+            this.rdb_PrimeraClase.Size = new System.Drawing.Size(125, 22);
+            this.rdb_PrimeraClase.TabIndex = 31;
+            this.rdb_PrimeraClase.TabStop = true;
+            this.rdb_PrimeraClase.Text = "Primera Clase ";
+            this.rdb_PrimeraClase.UseVisualStyleBackColor = true;
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.radioButton4);
-            this.groupBox1.Controls.Add(this.radioButton1);
-            this.groupBox1.Controls.Add(this.radioButton2);
-            this.groupBox1.Controls.Add(this.radioButton3);
-            this.groupBox1.Location = new System.Drawing.Point(22, 30);
+            this.groupBox1.Controls.Add(this.rdb_claseEconomica);
+            this.groupBox1.Controls.Add(this.rdb_PrimeraClase);
+            this.groupBox1.Controls.Add(this.rdb_ClaseEmpresarial);
+            this.groupBox1.Controls.Add(this.rdb_ClasePremiumEconomic);
+            this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.groupBox1.ForeColor = System.Drawing.Color.Maroon;
+            this.groupBox1.Location = new System.Drawing.Point(23, 62);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -160,11 +174,13 @@ namespace ProyectoGrupo4.Vistas
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.textBox4);
-            this.groupBox2.Controls.Add(this.textBox1);
-            this.groupBox2.Controls.Add(this.textBox2);
-            this.groupBox2.Controls.Add(this.textBox3);
-            this.groupBox2.Location = new System.Drawing.Point(281, 30);
+            this.groupBox2.Controls.Add(this.txt_ClaseEconomica);
+            this.groupBox2.Controls.Add(this.txt_PrimeraClase);
+            this.groupBox2.Controls.Add(this.txt_ClaseEmpresarial);
+            this.groupBox2.Controls.Add(this.txt_ClasePremiumEconomica);
+            this.groupBox2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.groupBox2.ForeColor = System.Drawing.Color.Maroon;
+            this.groupBox2.Location = new System.Drawing.Point(282, 62);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -173,39 +189,76 @@ namespace ProyectoGrupo4.Vistas
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "PRECIO";
             // 
+            // gradientPanel1
+            // 
+            this.gradientPanel1.Controls.Add(this.pictureBox1);
+            this.gradientPanel1.Controls.Add(this.label1);
+            this.gradientPanel1.Location = new System.Drawing.Point(1, 1);
+            this.gradientPanel1.Name = "gradientPanel1";
+            this.gradientPanel1.Size = new System.Drawing.Size(492, 42);
+            this.gradientPanel1.TabIndex = 45;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(136, 6);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(185, 24);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Honduras Airlines ";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::ProyectoGrupo4.Properties.Resources.avion3;
+            this.pictureBox1.Location = new System.Drawing.Point(317, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(50, 32);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
             // ClaseView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(494, 403);
+            this.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.ClientSize = new System.Drawing.Size(494, 370);
+            this.Controls.Add(this.gradientPanel1);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.CancelarButton);
-            this.Controls.Add(this.GuardarButton);
+            this.Controls.Add(this.btn_Cancelar);
+            this.Controls.Add(this.btn_Guardar);
             this.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.Name = "ClaseView";
-            this.Text = "ClaseView";
+            this.Text = "Clase";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gradientPanel1)).EndInit();
+            this.gradientPanel1.ResumeLayout(false);
+            this.gradientPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Button CancelarButton;
-        private System.Windows.Forms.Button GuardarButton;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.RadioButton radioButton4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.RadioButton radioButton1;
+        public System.Windows.Forms.Button btn_Cancelar;
+        public System.Windows.Forms.Button btn_Guardar;
+        public System.Windows.Forms.TextBox txt_ClaseEconomica;
+        public System.Windows.Forms.RadioButton rdb_claseEconomica;
+        public System.Windows.Forms.TextBox txt_ClasePremiumEconomica;
+        public System.Windows.Forms.RadioButton rdb_ClasePremiumEconomic;
+        public System.Windows.Forms.TextBox txt_ClaseEmpresarial;
+        public System.Windows.Forms.RadioButton rdb_ClaseEmpresarial;
+        public System.Windows.Forms.TextBox txt_PrimeraClase;
+        public System.Windows.Forms.RadioButton rdb_PrimeraClase;
+        private Syncfusion.Windows.Forms.Tools.GradientPanel gradientPanel1;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
     }

@@ -64,10 +64,12 @@
             // 
             // AceptarButton
             // 
+            this.AceptarButton.FlatAppearance.BorderSize = 0;
+            this.AceptarButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.AceptarButton.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AceptarButton.Location = new System.Drawing.Point(342, 166);
+            this.AceptarButton.Location = new System.Drawing.Point(342, 190);
             this.AceptarButton.Name = "AceptarButton";
-            this.AceptarButton.Size = new System.Drawing.Size(106, 52);
+            this.AceptarButton.Size = new System.Drawing.Size(106, 28);
             this.AceptarButton.TabIndex = 3;
             this.AceptarButton.Text = "Aceptar";
             this.AceptarButton.UseVisualStyleBackColor = true;
@@ -87,17 +89,19 @@
             this.ClaveTextBox.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ClaveTextBox.Location = new System.Drawing.Point(339, 117);
             this.ClaveTextBox.Name = "ClaveTextBox";
-            this.ClaveTextBox.PasswordChar = '*';
+            this.ClaveTextBox.PasswordChar = '•';
             this.ClaveTextBox.Size = new System.Drawing.Size(225, 26);
             this.ClaveTextBox.TabIndex = 2;
             this.ClaveTextBox.Text = "1234";
             // 
             // CancelarButton
             // 
+            this.CancelarButton.FlatAppearance.BorderSize = 0;
+            this.CancelarButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.CancelarButton.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CancelarButton.Location = new System.Drawing.Point(454, 166);
+            this.CancelarButton.Location = new System.Drawing.Point(454, 190);
             this.CancelarButton.Name = "CancelarButton";
-            this.CancelarButton.Size = new System.Drawing.Size(110, 52);
+            this.CancelarButton.Size = new System.Drawing.Size(110, 28);
             this.CancelarButton.TabIndex = 4;
             this.CancelarButton.Text = "Cancelar";
             this.CancelarButton.UseVisualStyleBackColor = true;
@@ -120,7 +124,7 @@
             this.Panel.Controls.Add(this.label3);
             this.Panel.Dock = System.Windows.Forms.DockStyle.Left;
             this.Panel.Location = new System.Drawing.Point(0, 0);
-            this.Panel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Panel.Margin = new System.Windows.Forms.Padding(4);
             this.Panel.Name = "Panel";
             this.Panel.Size = new System.Drawing.Size(212, 245);
             this.Panel.TabIndex = 8;
@@ -129,7 +133,7 @@
             // 
             this.pictureBox1.Image = global::ProyectoGrupo4.Properties.Resources.pngtree_blue_airplane_vector_clipart_png_image_961681;
             this.pictureBox1.Location = new System.Drawing.Point(29, 74);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(159, 144);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -151,7 +155,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            this.BackColor = System.Drawing.Color.Honeydew;
             this.ClientSize = new System.Drawing.Size(603, 245);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.Panel);
@@ -164,6 +168,7 @@
             this.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "LoginView";
+            this.Opacity = 0.9D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
             this.Panel.ResumeLayout(false);

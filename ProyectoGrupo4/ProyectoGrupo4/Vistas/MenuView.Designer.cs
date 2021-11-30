@@ -89,9 +89,9 @@ namespace ProyectoGrupo4.Vistas
             this.ribbonControlAdv1.QuickPanelVisible = false;
             this.ribbonControlAdv1.RibbonHeaderImage = Syncfusion.Windows.Forms.Tools.RibbonHeaderImage.None;
             this.ribbonControlAdv1.RibbonStyle = Syncfusion.Windows.Forms.Tools.RibbonStyle.Office2016;
-            this.ribbonControlAdv1.SelectedTab = this.toolStripTabItem3;
+            this.ribbonControlAdv1.SelectedTab = this.toolStripTabItem5;
             this.ribbonControlAdv1.ShowRibbonDisplayOptionButton = true;
-            this.ribbonControlAdv1.Size = new System.Drawing.Size(679, 146);
+            this.ribbonControlAdv1.Size = new System.Drawing.Size(764, 146);
             this.ribbonControlAdv1.SystemText.QuickAccessDialogDropDownName = "Start menu";
             this.ribbonControlAdv1.SystemText.RenameDisplayLabelText = "&Display Name:";
             this.ribbonControlAdv1.TabIndex = 1;
@@ -134,7 +134,7 @@ namespace ProyectoGrupo4.Vistas
             this.toolStripEx1.Office12Mode = false;
             this.toolStripEx1.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
             this.toolStripEx1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.toolStripEx1.Size = new System.Drawing.Size(31, 77);
+            this.toolStripEx1.Size = new System.Drawing.Size(91, 80);
             this.toolStripEx1.TabIndex = 0;
             // 
             // ClienteToolStripButton
@@ -144,7 +144,7 @@ namespace ProyectoGrupo4.Vistas
             this.ClienteToolStripButton.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.ClienteToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.ClienteToolStripButton.Name = "ClienteToolStripButton";
-            this.ClienteToolStripButton.Size = new System.Drawing.Size(55, 116);
+            this.ClienteToolStripButton.Size = new System.Drawing.Size(55, 63);
             this.ClienteToolStripButton.Text = "Clientes";
             this.ClienteToolStripButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.ClienteToolStripButton.Click += new System.EventHandler(this.ClienteToolStripButton_Click);
@@ -184,7 +184,7 @@ namespace ProyectoGrupo4.Vistas
             this.toolStripEx2.Office12Mode = false;
             this.toolStripEx2.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
             this.toolStripEx2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.toolStripEx2.Size = new System.Drawing.Size(29, 97);
+            this.toolStripEx2.Size = new System.Drawing.Size(84, 80);
             this.toolStripEx2.TabIndex = 0;
             // 
             // ClaseToolStripButton
@@ -194,7 +194,7 @@ namespace ProyectoGrupo4.Vistas
             this.ClaseToolStripButton.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.ClaseToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.ClaseToolStripButton.Name = "ClaseToolStripButton";
-            this.ClaseToolStripButton.Size = new System.Drawing.Size(39, 146);
+            this.ClaseToolStripButton.Size = new System.Drawing.Size(39, 63);
             this.ClaseToolStripButton.Text = "Clase";
             this.ClaseToolStripButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.ClaseToolStripButton.Click += new System.EventHandler(this.ClaseToolStripButton_Click);
@@ -285,7 +285,7 @@ namespace ProyectoGrupo4.Vistas
             this.toolStripEx4.Office12Mode = false;
             this.toolStripEx4.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
             this.toolStripEx4.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.toolStripEx4.Size = new System.Drawing.Size(29, 77);
+            this.toolStripEx4.Size = new System.Drawing.Size(87, 80);
             this.toolStripEx4.TabIndex = 0;
             // 
             // GenerarBoletoToolStripButton
@@ -364,7 +364,7 @@ namespace ProyectoGrupo4.Vistas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(679, 461);
+            this.ClientSize = new System.Drawing.Size(764, 461);
             this.Controls.Add(this.ribbonControlAdv1);
             this.Cursor = System.Windows.Forms.Cursors.Default;
             this.IsMdiContainer = true;

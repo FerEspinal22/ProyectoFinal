@@ -55,15 +55,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controladores\ClaseController.cs" />
     <Compile Include="Controladores\ClienteController.cs" />
     <Compile Include="Controladores\DestinoController.cs" />
     <Compile Include="Controladores\LoginController.cs" />
+    <Compile Include="Modelos\DAO\ClaseDAO.cs" />
     <Compile Include="Modelos\DAO\ClienteDAO.cs" />
     <Compile Include="Modelos\DAO\Conexion.cs" />
     <Compile Include="Modelos\DAO\DestinoDAO.cs" />
     <Compile Include="Modelos\DAO\UsuarioDAO.cs" />
     <Compile Include="Modelos\Entidades\Cliente.cs" />
     <Compile Include="Modelos\Entidades\Destino.cs" />
+    <Compile Include="Modelos\Entidades\TipoClase.cs" />
     <Compile Include="Modelos\Entidades\Usuario.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -160,6 +163,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\pngtree-blue-airplane-vector-clipart-png-image_961681.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\avion2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\avion3.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
