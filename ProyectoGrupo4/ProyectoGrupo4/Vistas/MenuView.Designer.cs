@@ -89,7 +89,7 @@ namespace ProyectoGrupo4.Vistas
             this.ribbonControlAdv1.QuickPanelVisible = false;
             this.ribbonControlAdv1.RibbonHeaderImage = Syncfusion.Windows.Forms.Tools.RibbonHeaderImage.None;
             this.ribbonControlAdv1.RibbonStyle = Syncfusion.Windows.Forms.Tools.RibbonStyle.Office2016;
-            this.ribbonControlAdv1.SelectedTab = this.toolStripTabItem5;
+            this.ribbonControlAdv1.SelectedTab = this.toolStripTabItem3;
             this.ribbonControlAdv1.ShowRibbonDisplayOptionButton = true;
             this.ribbonControlAdv1.Size = new System.Drawing.Size(764, 146);
             this.ribbonControlAdv1.SystemText.QuickAccessDialogDropDownName = "Start menu";
@@ -285,7 +285,7 @@ namespace ProyectoGrupo4.Vistas
             this.toolStripEx4.Office12Mode = false;
             this.toolStripEx4.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
             this.toolStripEx4.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.toolStripEx4.Size = new System.Drawing.Size(87, 80);
+            this.toolStripEx4.Size = new System.Drawing.Size(125, 80);
             this.toolStripEx4.TabIndex = 0;
             // 
             // GenerarBoletoToolStripButton
@@ -295,7 +295,7 @@ namespace ProyectoGrupo4.Vistas
             this.GenerarBoletoToolStripButton.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.GenerarBoletoToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.GenerarBoletoToolStripButton.Name = "GenerarBoletoToolStripButton";
-            this.GenerarBoletoToolStripButton.Size = new System.Drawing.Size(96, 51);
+            this.GenerarBoletoToolStripButton.Size = new System.Drawing.Size(96, 63);
             this.GenerarBoletoToolStripButton.Text = "Generar boleto";
             this.GenerarBoletoToolStripButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.GenerarBoletoToolStripButton.Click += new System.EventHandler(this.GenerarBoletoToolStripButton_Click);
@@ -367,10 +367,11 @@ namespace ProyectoGrupo4.Vistas
             this.ClientSize = new System.Drawing.Size(764, 461);
             this.Controls.Add(this.ribbonControlAdv1);
             this.Cursor = System.Windows.Forms.Cursors.Default;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.IsMdiContainer = true;
             this.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.Name = "MenuView";
-            this.Text = "MenuView";
+            this.Text = "Sistema de viajes";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControlAdv1)).EndInit();
             this.ribbonControlAdv1.ResumeLayout(false);

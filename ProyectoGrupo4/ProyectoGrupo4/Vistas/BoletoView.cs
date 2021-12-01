@@ -16,5 +16,6 @@ namespace ProyectoGrupo4.Vistas
         {
             InitializeComponent();
         }
+
     }
 }
