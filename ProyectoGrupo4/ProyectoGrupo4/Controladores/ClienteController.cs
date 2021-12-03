@@ -86,6 +86,10 @@ namespace ProyectoGrupo4.Controladores
                         LimpiarControles();
                         MessageBox.Show("Cliente creado exitosamente", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         ListarClientes();
+
+                        System.Security.Principal.GenericIdentity Nombre = new System.Security.Principal.GenericIdentity(vista.NombreTextBox.Text);
+                        System.Security.Principal.GenericPrincipal principal = new System.Security.Principal.GenericPrincipal(Nombre, null);
+                        System.Threading.Thread.CurrentPrincipal = principal;
                     }
                     else
                     {
@@ -218,6 +222,8 @@ namespace ProyectoGrupo4.Controladores
             vista.NombreTextBox.Clear();
             vista.NumeroTextBox.Clear();
             vista.CorreoTextBox.Clear();
+            vista.GeneroTextBox.Clear();
+            vista.EdadTextBox.Clear();
         }
     }
 }

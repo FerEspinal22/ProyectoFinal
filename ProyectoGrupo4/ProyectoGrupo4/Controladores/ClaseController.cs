@@ -101,8 +101,25 @@ namespace ProyectoGrupo4.Controladores
             if (inserto)
             {
                 MessageBox.Show("Insertado Satisfactoriamente", "Atencion", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                System.Security.Principal.GenericIdentity Nombre = new System.Security.Principal.GenericIdentity(vista.rdb_ClaseEmpresarial.Text);
+                System.Security.Principal.GenericPrincipal principal = new System.Security.Principal.GenericPrincipal(Nombre, null);
+                System.Threading.Thread.CurrentPrincipal = principal;
 
+                System.Security.Principal.GenericIdentity E = new System.Security.Principal.GenericIdentity(vista.rdb_claseEconomica.Text);
+                System.Security.Principal.GenericPrincipal prin = new System.Security.Principal.GenericPrincipal(E, null);
+                System.Threading.Thread.CurrentPrincipal = prin;
+
+                System.Security.Principal.GenericIdentity P = new System.Security.Principal.GenericIdentity(vista.rdb_PrimeraClase.Text);
+                System.Security.Principal.GenericPrincipal pri = new System.Security.Principal.GenericPrincipal(P, null);
+                System.Threading.Thread.CurrentPrincipal = pri;
+
+                System.Security.Principal.GenericIdentity CE = new System.Security.Principal.GenericIdentity(vista.rdb_ClasePremiumEconomic.Text);
+                System.Security.Principal.GenericPrincipal princi = new System.Security.Principal.GenericPrincipal(CE, null);
+                System.Threading.Thread.CurrentPrincipal = princi;
+
+               
             }
+
             else
             {
                 MessageBox.Show("Error");

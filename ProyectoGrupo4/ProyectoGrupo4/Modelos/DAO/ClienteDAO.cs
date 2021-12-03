@@ -44,6 +44,8 @@ namespace ProyectoGrupo4.Modelos.DAO
             return inserto;
         }
 
+      
+
         public DataTable GetCliente()
         {
             DataTable dt = new DataTable();
@@ -67,6 +69,7 @@ namespace ProyectoGrupo4.Modelos.DAO
             }
             return dt;
         }
+       
 
         public bool ActualizarCliente(Cliente cliente)
         {
@@ -127,5 +130,63 @@ namespace ProyectoGrupo4.Modelos.DAO
             return modifico;
         }
 
+        public string GetUltimoCliente(string cl)
+        {
+            string nombre = string.Empty;
+            try
+            {
+                StringBuilder sql = new StringBuilder();
+                sql.Append(" SELECT NOMBRE FROM CLIENTE WHERE ID=(SELECT max(ID) FROM CLIENTE); ");
+
+
+
+                comando.Connection = MiConexion;
+                MiConexion.Open();
+                comando.CommandType = System.Data.CommandType.Text;
+                comando.CommandText = sql.ToString();
+               
+                nombre = Convert.ToString( comando.ExecuteScalar());
+
+               
+               
+
+                MiConexion.Close();
+
+            }
+            catch (Exception ex)
+            {
+               return nombre;
+            }
+            return nombre;
+        }
+        public string GetId()
+        {
+            string precio = string.Empty;
+            try
+            {
+                StringBuilder sql = new StringBuilder();
+                sql.Append("SELECT ID FROM CLIENTE WHERE ID=(SELECT max(ID) FROM CLIENTE);");
+                // sql.Append(" SELECT NOMBRE FROM CLIENTE WHERE ID=(SELECT max(ID) FROM CLIENTE ");
+
+
+
+
+                comando.Connection = MiConexion;
+                MiConexion.Open();
+                comando.CommandType = System.Data.CommandType.Text;
+                comando.CommandText = sql.ToString();
+
+                precio = Convert.ToString(comando.ExecuteScalar());
+
+
+                MiConexion.Close();
+
+            }
+            catch (Exception ex)
+            {
+                return precio;
+            }
+            return precio;
+        }
     }
 }

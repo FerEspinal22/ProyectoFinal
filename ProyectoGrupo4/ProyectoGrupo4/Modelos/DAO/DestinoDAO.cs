@@ -117,7 +117,7 @@ namespace ProyectoGrupo4.Modelos.DAO
                 comando.Parameters.Clear();
                 comando.CommandType = System.Data.CommandType.Text;
                 comando.CommandText = sql.ToString();
-                comando.Parameters.Add("@Id", SqlDbType.Int).Value = id ;
+                comando.Parameters.Add("@Id", SqlDbType.Int).Value = id;
                 comando.ExecuteNonQuery();
                 modifico = true;
                 MiConexion.Close();
@@ -128,5 +128,98 @@ namespace ProyectoGrupo4.Modelos.DAO
             }
             return modifico;
         }
+
+        public string GetprimerDestino()
+        {
+            string precio = string.Empty;
+            try
+            {
+                StringBuilder sql = new StringBuilder();
+                sql.Append("SELECT LUGARDESTINO FROM DESTINO WHERE IDDESTINO=(SELECT max(IDDESTINO) FROM DESTINO);");
+                // sql.Append(" SELECT NOMBRE FROM CLIENTE WHERE ID=(SELECT max(ID) FROM CLIENTE ");
+
+
+
+
+                comando.Connection = MiConexion;
+                MiConexion.Open();
+                comando.CommandType = System.Data.CommandType.Text;
+                comando.CommandText = sql.ToString();
+
+                precio = Convert.ToString(comando.ExecuteScalar());
+
+
+                MiConexion.Close();
+
+            }
+            catch (Exception ex)
+            {
+                return precio;
+            }
+            return precio;
+        }
+
+        public string GetFechaSalida()
+        {
+            string precio = string.Empty;
+            try
+            {
+                StringBuilder sql = new StringBuilder();
+                sql.Append("SELECT FECHASALIDA FROM DESTINO WHERE IDDESTINO=(SELECT max(IDDESTINO) FROM DESTINO);");
+                // sql.Append(" SELECT NOMBRE FROM CLIENTE WHERE ID=(SELECT max(ID) FROM CLIENTE ");
+
+
+
+
+                comando.Connection = MiConexion;
+                MiConexion.Open();
+                comando.CommandType = System.Data.CommandType.Text;
+                comando.CommandText = sql.ToString();
+
+                precio = Convert.ToString(comando.ExecuteScalar());
+
+
+                MiConexion.Close();
+
+            }
+            catch (Exception ex)
+            {
+                return precio;
+            }
+            return precio;
+        }
+
+        public string GetFechaLlegada()
+        {
+            string precio = string.Empty;
+            try
+            {
+                StringBuilder sql = new StringBuilder();
+                sql.Append("SELECT FECHAREGRESO FROM DESTINO WHERE IDDESTINO=(SELECT max(IDDESTINO) FROM DESTINO);");
+                // sql.Append(" SELECT NOMBRE FROM CLIENTE WHERE ID=(SELECT max(ID) FROM CLIENTE ");
+
+
+
+
+                comando.Connection = MiConexion;
+                MiConexion.Open();
+                comando.CommandType = System.Data.CommandType.Text;
+                comando.CommandText = sql.ToString();
+
+                precio = Convert.ToString(comando.ExecuteScalar());
+
+
+                MiConexion.Close();
+
+            }
+            catch (Exception ex)
+            {
+                return precio;
+            }
+            return precio;
+
+
+        }
+        
     }
 }

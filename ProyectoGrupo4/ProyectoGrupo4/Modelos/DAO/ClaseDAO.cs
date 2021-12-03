@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace ProyectoGrupo4.Modelos.DAO
 {
-    public class ClaseDAO:Conexion
+    public class ClaseDAO : Conexion
     {
 
         SqlCommand comando = new SqlCommand();
@@ -45,5 +45,64 @@ namespace ProyectoGrupo4.Modelos.DAO
 
         }
 
+        public string GetUltimoClase(string clas)
+        {
+            string clase = string.Empty;
+            try
+            {
+                StringBuilder sql = new StringBuilder();
+                sql.Append("SELECT NOMBRECLASE FROM TIPOCLASE WHERE ID=(SELECT max(ID) FROM TIPOCLASE);");
+                // sql.Append(" SELECT NOMBRE FROM CLIENTE WHERE ID=(SELECT max(ID) FROM CLIENTE ");
+
+
+
+
+                comando.Connection = MiConexion;
+                MiConexion.Open();
+                comando.CommandType = System.Data.CommandType.Text;
+                comando.CommandText = sql.ToString();
+
+                clase = Convert.ToString(comando.ExecuteScalar());
+
+
+                MiConexion.Close();
+
+            }
+            catch (Exception ex)
+            {
+                return clase;
+            }
+            return clase;
+
+        }
+        public string GetPrecio()
+        {
+            string precio = string.Empty;
+            try
+            {
+                StringBuilder sql = new StringBuilder();
+                sql.Append("SELECT PRECIO FROM TIPOCLASE WHERE ID=(SELECT max(ID) FROM TIPOCLASE);");
+                // sql.Append(" SELECT NOMBRE FROM CLIENTE WHERE ID=(SELECT max(ID) FROM CLIENTE ");
+
+
+
+
+                comando.Connection = MiConexion;
+                MiConexion.Open();
+                comando.CommandType = System.Data.CommandType.Text;
+                comando.CommandText = sql.ToString();
+
+                precio = Convert.ToString(comando.ExecuteScalar());
+
+
+                MiConexion.Close();
+
+            }
+            catch (Exception ex)
+            {
+                return precio;
+            }
+            return precio;
+        }
     }
 }

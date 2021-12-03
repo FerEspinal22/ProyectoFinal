@@ -59,14 +59,17 @@
     <Compile Include="Controladores\ClaseController.cs" />
     <Compile Include="Controladores\ClienteController.cs" />
     <Compile Include="Controladores\DestinoController.cs" />
+    <Compile Include="Controladores\GenerarBoletoController.cs" />
     <Compile Include="Controladores\LoginController.cs" />
     <Compile Include="Modelos\DAO\ClaseDAO.cs" />
     <Compile Include="Modelos\DAO\ClienteDAO.cs" />
     <Compile Include="Modelos\DAO\Conexion.cs" />
     <Compile Include="Modelos\DAO\DestinoDAO.cs" />
+    <Compile Include="Modelos\DAO\GenerarBoletoDAO.cs" />
     <Compile Include="Modelos\DAO\UsuarioDAO.cs" />
     <Compile Include="Modelos\Entidades\Cliente.cs" />
     <Compile Include="Modelos\Entidades\Destino.cs" />
+    <Compile Include="Modelos\Entidades\GenerarBoleto.cs" />
     <Compile Include="Modelos\Entidades\TipoClase.cs" />
     <Compile Include="Modelos\Entidades\Usuario.cs" />
     <Compile Include="Program.cs" />
