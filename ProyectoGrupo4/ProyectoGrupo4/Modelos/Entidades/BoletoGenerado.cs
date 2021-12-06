@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 
 namespace ProyectoGrupo4.Modelos.Entidades
 {
-    public class TipoClase
+    public class BoletoGenerado
     {
-        public int Id { get; set; }
-        public string Clase { get; set; }
 
-        public int Precio { get; set; }
+        public int Id { get; set; }
+
+
+
     }
 }

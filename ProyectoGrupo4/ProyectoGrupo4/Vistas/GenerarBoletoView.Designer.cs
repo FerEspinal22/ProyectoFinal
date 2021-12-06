@@ -33,6 +33,8 @@ namespace ProyectoGrupo4.Vistas
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.FechaRegresoTextBox = new System.Windows.Forms.TextBox();
+            this.FechaSalidaTextBox = new System.Windows.Forms.TextBox();
             this.PrecioTextBox = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -45,8 +47,8 @@ namespace ProyectoGrupo4.Vistas
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.NombreTextBox = new System.Windows.Forms.TextBox();
-            this.FechaRegresoTextBox = new System.Windows.Forms.TextBox();
-            this.FechaSalidaTextBox = new System.Windows.Forms.TextBox();
+            this.btn_calcularTotal = new System.Windows.Forms.Button();
+            this.txt_total = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -72,6 +74,8 @@ namespace ProyectoGrupo4.Vistas
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.txt_total);
+            this.groupBox1.Controls.Add(this.btn_calcularTotal);
             this.groupBox1.Controls.Add(this.FechaRegresoTextBox);
             this.groupBox1.Controls.Add(this.FechaSalidaTextBox);
             this.groupBox1.Controls.Add(this.PrecioTextBox);
@@ -97,6 +101,20 @@ namespace ProyectoGrupo4.Vistas
             this.groupBox1.TabIndex = 56;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "BOLETO";
+            // 
+            // FechaRegresoTextBox
+            // 
+            this.FechaRegresoTextBox.Location = new System.Drawing.Point(182, 375);
+            this.FechaRegresoTextBox.Name = "FechaRegresoTextBox";
+            this.FechaRegresoTextBox.Size = new System.Drawing.Size(229, 23);
+            this.FechaRegresoTextBox.TabIndex = 69;
+            // 
+            // FechaSalidaTextBox
+            // 
+            this.FechaSalidaTextBox.Location = new System.Drawing.Point(181, 328);
+            this.FechaSalidaTextBox.Name = "FechaSalidaTextBox";
+            this.FechaSalidaTextBox.Size = new System.Drawing.Size(229, 23);
+            this.FechaSalidaTextBox.TabIndex = 68;
             // 
             // PrecioTextBox
             // 
@@ -205,26 +223,29 @@ namespace ProyectoGrupo4.Vistas
             this.NombreTextBox.Size = new System.Drawing.Size(255, 23);
             this.NombreTextBox.TabIndex = 58;
             // 
-            // FechaRegresoTextBox
+            // btn_calcularTotal
             // 
-            this.FechaRegresoTextBox.Location = new System.Drawing.Point(182, 375);
-            this.FechaRegresoTextBox.Name = "FechaRegresoTextBox";
-            this.FechaRegresoTextBox.Size = new System.Drawing.Size(229, 23);
-            this.FechaRegresoTextBox.TabIndex = 69;
+            this.btn_calcularTotal.Location = new System.Drawing.Point(51, 418);
+            this.btn_calcularTotal.Name = "btn_calcularTotal";
+            this.btn_calcularTotal.Size = new System.Drawing.Size(75, 23);
+            this.btn_calcularTotal.TabIndex = 70;
+            this.btn_calcularTotal.Text = "Calcular ";
+            this.btn_calcularTotal.UseVisualStyleBackColor = true;
             // 
-            // FechaSalidaTextBox
+            // txt_total
             // 
-            this.FechaSalidaTextBox.Location = new System.Drawing.Point(181, 328);
-            this.FechaSalidaTextBox.Name = "FechaSalidaTextBox";
-            this.FechaSalidaTextBox.Size = new System.Drawing.Size(229, 23);
-            this.FechaSalidaTextBox.TabIndex = 68;
+            this.txt_total.Location = new System.Drawing.Point(153, 418);
+            this.txt_total.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.txt_total.Name = "txt_total";
+            this.txt_total.Size = new System.Drawing.Size(125, 23);
+            this.txt_total.TabIndex = 71;
             // 
             // GenerarBoletoView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
-            this.ClientSize = new System.Drawing.Size(551, 568);
+            this.ClientSize = new System.Drawing.Size(629, 631);
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -256,5 +277,7 @@ namespace ProyectoGrupo4.Vistas
         public System.Windows.Forms.DateTimePicker FechaDateTimePicker;
         private System.Windows.Forms.TextBox FechaRegresoTextBox;
         private System.Windows.Forms.TextBox FechaSalidaTextBox;
+        public System.Windows.Forms.TextBox txt_total;
+        public System.Windows.Forms.Button btn_calcularTotal;
     }
 }

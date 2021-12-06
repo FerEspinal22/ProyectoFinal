@@ -85,6 +85,11 @@ namespace ProyectoGrupo4.Controladores
                         DeshabilitarControles();
                         LimpiarControles();
                         MessageBox.Show("Cliente creado exitosamente", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        System.Security.Principal.GenericIdentity identidad = new System.Security.Principal.GenericIdentity(vista.NombreTextBox.Text);
+                        System.Security.Principal.GenericPrincipal principal = new System.Security.Principal.GenericPrincipal(identidad, null);
+                        System.Threading.Thread.CurrentPrincipal = principal;
+
+
                         ListarClientes();
                     }
                     else

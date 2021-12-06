@@ -60,13 +60,48 @@ namespace ProyectoGrupo4.Modelos.DAO
                 dt.Load(dr);
                 MiConexion.Close();
             }
-            catch (Exception )
+            catch (Exception)
             {
 
                 throw;
             }
             return dt;
         }
+
+        public string GetUsuarioPorEmail(string email)
+        {
+            string user = string.Empty;
+            try
+            {
+                StringBuilder sql = new StringBuilder();
+                sql.Append(" SELECT NOMBRE FROM CLIENTE WHERE ID=(SELECT max(ID) FROM CLIENTE ); ");
+                //sql.Append(" WHERE ID = @Id ; ");
+
+                comando.Connection = MiConexion;
+                MiConexion.Open();
+                comando.CommandType = System.Data.CommandType.Text;
+                comando.CommandText = sql.ToString();
+                //comando.Parameters.Add("@Id", SqlDbType.Int).Value = email;
+                //comando.Parameters.Add("@Nombre", SqlDbType.NVarChar, 80).Value = user.Id;
+               user = comando.ExecuteScalar().ToString();
+
+               
+
+                MiConexion.Close();
+
+            }
+            catch (Exception ex)
+            {
+                MiConexion.Close();
+            }
+            return user;
+        }
+
+
+
+
+
+
 
         public bool ActualizarCliente(Cliente cliente)
         {

@@ -9,14 +9,51 @@ using System.Threading.Tasks;
 
 namespace ProyectoGrupo4.Modelos.DAO
 {
-    public class ClaseDAO:Conexion
+    public class ClaseDAO : Conexion
     {
 
         SqlCommand comando = new SqlCommand();
+
+
+        public string GetUsuarioClase()
+        {
+            string user = string.Empty;
+            try
+            {
+                StringBuilder sql = new StringBuilder();
+                sql.Append(" SELECT PRECIO FROM TIPOCLASE WHERE ID=(SELECT max(ID) FROM TIPOCLASE ); ");
+               
+
+                comando.Connection = MiConexion;
+                MiConexion.Open();
+                comando.CommandType = System.Data.CommandType.Text;
+                comando.CommandText = sql.ToString();
+                //comando.Parameters.Add("@Id", SqlDbType.Int).Value = email;
+                //comando.Parameters.Add("@Nombre", SqlDbType.NVarChar, 80).Value = user.Id;
+                user = comando.ExecuteScalar().ToString();
+
+
+
+                MiConexion.Close();
+
+            }
+            catch (Exception ex)
+            {
+                MiConexion.Close();
+            }
+            return user;
+        }
+
+
+
+
+
+
         public bool InsertarTipoClase(TipoClase tip)
         {
             try
             {
+                MiConexion.Close();
                 StringBuilder sql = new StringBuilder();
                 sql.Append("INSERT INTO TIPOCLASE");// pasando las sentencia con el metodo appen
                 sql.Append(" VALUES (@NombreClase,@Precio)");
@@ -36,7 +73,7 @@ namespace ProyectoGrupo4.Modelos.DAO
             catch (Exception)
             {
                 return false;
-                throw;
+                //throw;
             }
 
 
@@ -46,4 +83,5 @@ namespace ProyectoGrupo4.Modelos.DAO
         }
 
     }
+
 }

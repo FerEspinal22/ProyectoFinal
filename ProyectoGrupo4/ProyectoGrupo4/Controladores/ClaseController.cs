@@ -34,65 +34,99 @@ namespace ProyectoGrupo4.Controladores
 
         private void guardar(object serder, EventArgs e)
         {
-            int precio;
+            TipoClase TipoClass = new TipoClase();
+            string precio;
             string nombre = "";
             if (vista.rdb_PrimeraClase.Checked == true)
             {
-
+                
                 MessageBox.Show("Selecciono Primera Clase");
                 nombre = "Primera Clase";
-                vista.rdb_ClaseEmpresarial.Enabled = false;
-                vista.rdb_ClasePremiumEconomic.Enabled = false;
-                vista.rdb_claseEconomica.Enabled = false;
+                TipoClass.Clase = nombre;
+                //vista.rdb_ClaseEmpresarial.Enabled = false;
+                //vista.rdb_ClasePremiumEconomic.Enabled = false;
+                //vista.rdb_claseEconomica.Enabled = false;
 
-                precio = 250;
-                TipoClass.Precio = precio;
+                precio = Convert.ToString( 250);
+                TipoClass.Precio =Convert.ToInt32( precio);
                 vista.txt_PrimeraClase.Text = precio.ToString();
 
             }
+            //else
+            //{
+            //    precio = 0;
+            //    TipoClass.Precio = precio;
+            //    nombre = string.Empty;
+            //    TipoClass.Clase = nombre;
+            //}
             if (vista.rdb_ClaseEmpresarial.Checked == true)
             {
-
+                
                 MessageBox.Show("Selecciono Clase Empresarial");
                 nombre = "Clase Empresarial";
-                vista.rdb_PrimeraClase.Enabled = false;
-                vista.rdb_ClasePremiumEconomic.Enabled = false;
-                vista.rdb_claseEconomica.Enabled = false;
+                TipoClass.Clase = nombre;
+                //vista.rdb_PrimeraClase.Enabled = false;
+                //vista.rdb_ClasePremiumEconomic.Enabled = false;
+                //vista.rdb_claseEconomica.Enabled = false;
 
-                precio = 150;
-                TipoClass.Precio = precio;
+                precio = Convert.ToString(150);
+                TipoClass.Precio = Convert.ToInt32(precio);
                 vista.txt_ClaseEmpresarial.Text = precio.ToString();
 
             }
+            //else
+            //{
+            //    precio = 0;
+            //    TipoClass.Precio = precio;
+            //    nombre = string.Empty;
+            //    TipoClass.Clase = nombre;
+            //}
             if (vista.rdb_ClasePremiumEconomic.Checked == true)
             {
-
+                
                 MessageBox.Show("Selecciono Clase Premium Economica");
                 nombre = "Clase Premium Economica";
-                vista.rdb_PrimeraClase.Enabled = false;
-                vista.rdb_ClaseEmpresarial.Enabled = false;
-                vista.rdb_claseEconomica.Enabled = false;
+                TipoClass.Clase = nombre;
+                //vista.rdb_PrimeraClase.Enabled = false;
+                //vista.rdb_ClaseEmpresarial.Enabled = false;
+                //vista.rdb_claseEconomica.Enabled = false;
 
-                precio = 100;
-                TipoClass.Precio = precio;
+                precio = Convert.ToString(100);
+                TipoClass.Precio = Convert.ToInt32(precio);
                 vista.txt_ClasePremiumEconomica.Text = precio.ToString();
 
             }
+            //else
+            //{
+            //    precio = 0;
+            //    TipoClass.Precio = precio;
+            //    nombre = string.Empty;
+            //    TipoClass.Clase = nombre;
+            //}
+            
             if (vista.rdb_claseEconomica.Checked == true)
             {
-
+                
                 MessageBox.Show("Selecciono Economica");
                 nombre = "Clase Economica";
-                vista.rdb_PrimeraClase.Enabled = false;
-                vista.rdb_ClaseEmpresarial.Enabled = false;
-                vista.rdb_ClasePremiumEconomic.Enabled = false;
+                TipoClass.Clase = nombre;
+                //vista.rdb_PrimeraClase.Enabled = false;
+                //vista.rdb_ClaseEmpresarial.Enabled = false;
+                //vista.rdb_ClasePremiumEconomic.Enabled = false;
 
-                precio = 50;
-                TipoClass.Precio = precio;
+                precio = Convert.ToString(250);
+                TipoClass.Precio = Convert.ToInt32(precio);
                 vista.txt_ClaseEconomica.Text = precio.ToString();
 
             }
-            TipoClass.Clase = nombre;
+            //else
+            //{
+            //    precio = 0;
+            //    TipoClass.Precio = precio;
+            //    nombre = string.Empty;
+            //    TipoClass.Clase = nombre;
+            //}
+            //TipoClass.Clase = nombre;
 
             bool inserto = Class.InsertarTipoClase(TipoClass);
 
@@ -100,7 +134,12 @@ namespace ProyectoGrupo4.Controladores
 
             if (inserto)
             {
+                
+
                 MessageBox.Show("Insertado Satisfactoriamente", "Atencion", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                //System.Security.Principal.GenericIdentity  identidad = new System.Security.Principal.GenericIdentity(vista.txt_PrimeraClase.Text);
+                //System.Security.Principal.GenericPrincipal principal = new System.Security.Principal.GenericPrincipal(identidad, null);
+                //System.Threading.Thread.CurrentPrincipal = principal;
 
             }
             else
