@@ -90,15 +90,16 @@ namespace ProyectoGrupo4.Vistas
             this.LugarDestinotextBox.Enabled = false;
             this.LugarDestinotextBox.Location = new System.Drawing.Point(578, 80);
             this.LugarDestinotextBox.Name = "LugarDestinotextBox";
-            this.LugarDestinotextBox.Size = new System.Drawing.Size(229, 23);
+            this.LugarDestinotextBox.Size = new System.Drawing.Size(229, 27);
             this.LugarDestinotextBox.TabIndex = 72;
+            this.LugarDestinotextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.LugarDestinotextBox_KeyPress);
             // 
             // IdtextBox
             // 
             this.IdtextBox.Location = new System.Drawing.Point(156, 31);
             this.IdtextBox.Name = "IdtextBox";
             this.IdtextBox.ReadOnly = true;
-            this.IdtextBox.Size = new System.Drawing.Size(229, 23);
+            this.IdtextBox.Size = new System.Drawing.Size(229, 27);
             this.IdtextBox.TabIndex = 70;
             // 
             // label8
@@ -106,7 +107,7 @@ namespace ProyectoGrupo4.Vistas
             this.label8.AutoSize = true;
             this.label8.Location = new System.Drawing.Point(126, 31);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(24, 17);
+            this.label8.Size = new System.Drawing.Size(32, 21);
             this.label8.TabIndex = 71;
             this.label8.Text = "Id:";
             // 
@@ -116,7 +117,7 @@ namespace ProyectoGrupo4.Vistas
             this.FechaLlegadaDateTimePicker.Location = new System.Drawing.Point(581, 203);
             this.FechaLlegadaDateTimePicker.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.FechaLlegadaDateTimePicker.Name = "FechaLlegadaDateTimePicker";
-            this.FechaLlegadaDateTimePicker.Size = new System.Drawing.Size(200, 23);
+            this.FechaLlegadaDateTimePicker.Size = new System.Drawing.Size(200, 27);
             this.FechaLlegadaDateTimePicker.TabIndex = 69;
             // 
             // FechaSalidaDateTimePicker
@@ -125,7 +126,7 @@ namespace ProyectoGrupo4.Vistas
             this.FechaSalidaDateTimePicker.Location = new System.Drawing.Point(163, 207);
             this.FechaSalidaDateTimePicker.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.FechaSalidaDateTimePicker.Name = "FechaSalidaDateTimePicker";
-            this.FechaSalidaDateTimePicker.Size = new System.Drawing.Size(200, 23);
+            this.FechaSalidaDateTimePicker.Size = new System.Drawing.Size(200, 27);
             this.FechaSalidaDateTimePicker.TabIndex = 68;
             // 
             // label7
@@ -133,7 +134,7 @@ namespace ProyectoGrupo4.Vistas
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(451, 207);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(123, 17);
+            this.label7.Size = new System.Drawing.Size(161, 21);
             this.label7.TabIndex = 60;
             this.label7.Text = "Fecha de regreso:";
             // 
@@ -142,7 +143,7 @@ namespace ProyectoGrupo4.Vistas
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(44, 209);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(114, 17);
+            this.label6.Size = new System.Drawing.Size(149, 21);
             this.label6.TabIndex = 58;
             this.label6.Text = "Fecha de salida:";
             // 
@@ -151,15 +152,16 @@ namespace ProyectoGrupo4.Vistas
             this.CantidadBebesTextBox.Enabled = false;
             this.CantidadBebesTextBox.Location = new System.Drawing.Point(692, 138);
             this.CantidadBebesTextBox.Name = "CantidadBebesTextBox";
-            this.CantidadBebesTextBox.Size = new System.Drawing.Size(89, 23);
+            this.CantidadBebesTextBox.Size = new System.Drawing.Size(89, 27);
             this.CantidadBebesTextBox.TabIndex = 5;
+            this.CantidadBebesTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.CantidadBebesTextBox_KeyPress);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(547, 146);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(139, 17);
+            this.label5.Size = new System.Drawing.Size(183, 21);
             this.label5.TabIndex = 56;
             this.label5.Text = "Cantidad de bebés:";
             // 
@@ -168,15 +170,16 @@ namespace ProyectoGrupo4.Vistas
             this.CantidadNiniosTextBox.Enabled = false;
             this.CantidadNiniosTextBox.Location = new System.Drawing.Point(427, 138);
             this.CantidadNiniosTextBox.Name = "CantidadNiniosTextBox";
-            this.CantidadNiniosTextBox.Size = new System.Drawing.Size(89, 23);
+            this.CantidadNiniosTextBox.Size = new System.Drawing.Size(89, 27);
             this.CantidadNiniosTextBox.TabIndex = 4;
+            this.CantidadNiniosTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.CantidadNiniosTextBox_KeyPress);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(288, 146);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(133, 17);
+            this.label4.Size = new System.Drawing.Size(171, 21);
             this.label4.TabIndex = 54;
             this.label4.Text = "Cantidad de niños:";
             // 
@@ -185,15 +188,16 @@ namespace ProyectoGrupo4.Vistas
             this.CantidadAdultotextBox.Enabled = false;
             this.CantidadAdultotextBox.Location = new System.Drawing.Point(173, 138);
             this.CantidadAdultotextBox.Name = "CantidadAdultotextBox";
-            this.CantidadAdultotextBox.Size = new System.Drawing.Size(89, 23);
+            this.CantidadAdultotextBox.Size = new System.Drawing.Size(89, 27);
             this.CantidadAdultotextBox.TabIndex = 3;
+            this.CantidadAdultotextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.CantidadAdultotextBox_KeyPress);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(25, 144);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(148, 17);
+            this.label3.Size = new System.Drawing.Size(192, 21);
             this.label3.TabIndex = 52;
             this.label3.Text = "Cantidad de adultos:";
             // 
@@ -202,15 +206,16 @@ namespace ProyectoGrupo4.Vistas
             this.CiudadSalidaTextBox.Enabled = false;
             this.CiudadSalidaTextBox.Location = new System.Drawing.Point(156, 76);
             this.CiudadSalidaTextBox.Name = "CiudadSalidaTextBox";
-            this.CiudadSalidaTextBox.Size = new System.Drawing.Size(229, 23);
+            this.CiudadSalidaTextBox.Size = new System.Drawing.Size(229, 27);
             this.CiudadSalidaTextBox.TabIndex = 1;
+            this.CiudadSalidaTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.CiudadSalidaTextBox_KeyPress);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(512, 80);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(60, 17);
+            this.label2.Size = new System.Drawing.Size(77, 21);
             this.label2.TabIndex = 48;
             this.label2.Text = "Destino:";
             // 
@@ -219,7 +224,7 @@ namespace ProyectoGrupo4.Vistas
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(26, 80);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(124, 17);
+            this.label1.Size = new System.Drawing.Size(160, 21);
             this.label1.TabIndex = 46;
             this.label1.Text = "Ciudad de salida:";
             // 
@@ -293,7 +298,7 @@ namespace ProyectoGrupo4.Vistas
             // 
             // DestinoView
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(911, 473);
             this.Controls.Add(this.CancelarButton);

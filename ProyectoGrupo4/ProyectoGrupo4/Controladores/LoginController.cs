@@ -41,7 +41,11 @@ namespace ProyectoGrupo4.Controladores
             {
                 MenuView menu = new MenuView();
                 vista.Hide();
-                
+
+                System.Security.Principal.GenericIdentity Nombre = new System.Security.Principal.GenericIdentity(vista.CorreoTextBox.Text);
+                System.Security.Principal.GenericPrincipal principal = new System.Security.Principal.GenericPrincipal(Nombre, null);
+                System.Threading.Thread.CurrentPrincipal = principal;
+
                 menu.Show();
             }
             else

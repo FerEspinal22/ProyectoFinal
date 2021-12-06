@@ -16,8 +16,13 @@ namespace ProyectoGrupo4.Vistas
         public GenerarBoletoView()
         {
             InitializeComponent();
+
             GenerarBoletoController controller = new GenerarBoletoController(this);
 
+
+            
         }
     }
 }
+
+       

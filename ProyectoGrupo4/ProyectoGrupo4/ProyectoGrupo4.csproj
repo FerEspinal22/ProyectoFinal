@@ -55,6 +55,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controladores\BoletoDetalleController.cs" />
     <Compile Include="Controladores\ClaseController.cs" />
     <Compile Include="Controladores\ClienteController.cs" />
     <Compile Include="Controladores\DestinoController.cs" />
@@ -69,6 +70,7 @@
     <Compile Include="Modelos\Entidades\BoletoGenerado.cs" />
     <Compile Include="Modelos\Entidades\Cliente.cs" />
     <Compile Include="Modelos\Entidades\Destino.cs" />
+    <Compile Include="Modelos\Entidades\GenerarBoleto.cs" />
     <Compile Include="Modelos\Entidades\TipoClase.cs" />
     <Compile Include="Modelos\Entidades\Usuario.cs" />
     <Compile Include="Program.cs" />
